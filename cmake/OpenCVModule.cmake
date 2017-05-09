@@ -871,7 +871,7 @@ macro(_ocv_create_module)
   endif()
   if("${_target_type}" STREQUAL "SHARED_LIBRARY")
     install(TARGETS ${the_module}
-      LIBRARY DESTINATION ${OPENCV_LIB_INSTALL_PATH} COMPONENT dev NAMELINK_ONLY)
+      LIBRARY DESTINATION ${OPENCV_LIB_INSTALL_PATH} COMPONENT dev)
   endif()
 
   foreach(m ${OPENCV_MODULE_${the_module}_CHILDREN} ${the_module})
