@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-cd ..
+cd "$(dirname $0)/.."
 mkdir -p build
 cd build
 rm -rf *
