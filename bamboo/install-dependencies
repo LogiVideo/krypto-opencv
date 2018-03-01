@@ -1,3 +1,4 @@
 #!/bin/bash -e
 
+sudo apt-get update
 sudo apt-get -y install cmake git libgtk2.0-dev pkg-config
